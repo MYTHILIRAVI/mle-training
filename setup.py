@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="housing",
+    name="Housing-MYTHILI",
     version="v0.3",
     author="Mythili Ravi",
     author_email="mythili.ravi@tigeranalytics.com",

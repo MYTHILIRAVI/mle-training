@@ -3,11 +3,12 @@
 *.tgz
 build/**
 *.egg-info/**
-dist/**
 mlruns/**
 .flake8
 .vscode/**
 *model/
 *.log
-artifacts/{0..9}/**
+artifacts/models/**
 docs/build/**
+src/Housing_MYTHILI.egg-info/
+src/mythili_house_price_prediction.egg-info/**
