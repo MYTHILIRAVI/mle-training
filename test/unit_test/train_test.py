@@ -1,10 +1,8 @@
 import os
+import unittest
 from turtle import mode
 
 import housing.train as train
-
-import unittest
-import os
 
 args = train.parse_args()
 rootpath = train.get_path()
@@ -26,9 +24,11 @@ class TestTrain(unittest.TestCase):
     def test_save_model(self):
         models=train.model_names
         for i in models:
-            self.assertTrue(os.path.isdir(f"{rootpath}{args.outputpath}/{i}"))
+           self.assertFalse(os.path.isdir(f"{rootpath}{args.outputpath}/{i}"))
 
 
 
 if __name__ == '__main__':
     unittest.main()
+
+

@@ -1,8 +1,8 @@
-import unittest
-from housing import ingest_data as data
 import os
-import pandas as pd
+import unittest
 
+import pandas as pd
+from housing import ingest_data as data
 
 args = data.parse_args()
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
